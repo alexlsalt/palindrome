@@ -28,10 +28,10 @@ $ gem install almorton_palindrome
 
 ```
 $ irb
->> require 'mhartl_palindrome'
->> "honey badger".palindrome?
+>> require 'almorton_palindrome'
+>> "alex morton".palindrome?
 => false
->> "deified".palindrome?
+>> "racecar".palindrome?
 => true
 >> "Able was I, ere I saw Elba.".palindrome?
 => true
