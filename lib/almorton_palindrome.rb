@@ -1,6 +1,14 @@
 require "almorton_palindrome/version"
 
-module AlmortonPalindrome
-  class Error < StandardError; end
-  # Your code goes here...
+class String
+  def palindrome?
+    processed_content == processed_content.reverse
+  end
+
+  private
+
+    # Returns content for palindrome testing
+    def processed_content
+      self.downcase.scan(/[a-z]/i)
+    end
 end
